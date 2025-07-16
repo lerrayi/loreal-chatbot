@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
 /* —— basic reset —— */
 * {
   box-sizing: border-box;
@@ -7,10 +9,13 @@
 
 /* —— body + fonts —— */
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
   display: flex;
   justify-content: center;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
 }
 
 .page-wrapper {
@@ -25,9 +30,12 @@ body {
 }
 
 .site-title {
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-family: "Playfair Display", "Times New Roman", Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #000;
 }
 
 /* chat window */
@@ -42,7 +50,6 @@ body {
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
   white-space: pre-line;
 }
 
@@ -68,14 +75,15 @@ body {
 }
 
 .chat-form input {
+  outline: 1px solid #000;
   flex: 1;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   font-size: 18px;
 }
 
 .chat-form input:focus {
-  outline: 2px solid #000;
+  outline: 1px solid #FF003B;
   outline-offset: 2px;
 }
 
@@ -99,12 +107,13 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #FF003B;
 }
 
 .chat-form button:focus {
   outline: 2px solid #000;
   outline-offset: 2px;
+  background: #FF003B;
 }
 
 /* visually hidden */
